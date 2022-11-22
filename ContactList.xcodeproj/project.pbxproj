@@ -17,6 +17,7 @@
 		50C5A18B292C082300E2FE97 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5A18A292C082300E2FE97 /* ContactListViewController.swift */; };
 		50C5A18D292CCFAC00E2FE97 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5A18C292CCFAC00E2FE97 /* DetailsViewController.swift */; };
 		50C5A191292CD68500E2FE97 /* AllInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C5A190292CD68500E2FE97 /* AllInfoTableViewController.swift */; };
+		50DC83DB292CFD4500BB3EDA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DC83DA292CFD4500BB3EDA /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		50C5A18A292C082300E2FE97 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		50C5A18C292CCFAC00E2FE97 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		50C5A190292CD68500E2FE97 /* AllInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllInfoTableViewController.swift; sourceTree = "<group>"; };
+		50DC83DA292CFD4500BB3EDA /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				50C5A18A292C082300E2FE97 /* ContactListViewController.swift */,
+				50DC83DA292CFD4500BB3EDA /* TabBarViewController.swift */,
 				50C5A18C292CCFAC00E2FE97 /* DetailsViewController.swift */,
 				50C5A190292CD68500E2FE97 /* AllInfoTableViewController.swift */,
 			);
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DC83DB292CFD4500BB3EDA /* TabBarViewController.swift in Sources */,
 				50C5A189292C002000E2FE97 /* Person.swift in Sources */,
 				50C5A191292CD68500E2FE97 /* AllInfoTableViewController.swift in Sources */,
 				50C5A187292BFE7600E2FE97 /* DataManager.swift in Sources */,

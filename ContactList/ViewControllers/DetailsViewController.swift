@@ -13,14 +13,14 @@ class DetailsViewController: UIViewController {
   @IBOutlet weak var phoneLabel: UILabel!
   @IBOutlet weak var emailLabel: UILabel!
   
-  var person: Person!
+  var personDetail: Person!
   
   override func viewDidLoad() {
         super.viewDidLoad()
 
-    fullNameLabel.text = person.fullName
-    phoneLabel.text = "Phone: \(person.number)"
-    emailLabel.text = "Email: \(person.email)"
+    fullNameLabel.text = personDetail.fullName
+    phoneLabel.text = "Phone: \(personDetail.number)"
+    emailLabel.text = "Email: \(personDetail.email)"
     }
     
 }

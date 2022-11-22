@@ -8,27 +8,27 @@
 import UIKit
 
 class AllInfoTableViewController: UITableViewController {
-  
-     let person = Person.getPerson()
+
+     var personTwo: [Person]!
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-      return person.count
+      return personTwo.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       2
     }
-  
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-      person[section].fullName
+      personTwo[section].fullName
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       
         let cell = tableView.dequeueReusableCell(withIdentifier: "contacts", for: indexPath)
-        let personList = person[indexPath.section]
+        let personList = personTwo[indexPath.section]
         var content = cell.defaultContentConfiguration()
       
         switch indexPath.row {
@@ -39,8 +39,8 @@ class AllInfoTableViewController: UITableViewController {
         default:
           print("Contact")
         }
-      
-      
+
+
         cell.contentConfiguration = content
            
 
