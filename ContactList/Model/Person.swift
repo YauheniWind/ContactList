@@ -18,13 +18,13 @@ struct Person {
 }
 
 extension Person {
-
+  
   static func getPerson() -> [Person] {
     var personList: [Person] = []
-    let randomNames = DataManager.names.shuffled()
-    let randomSurnames = DataManager.surnames.shuffled()
-    let randomEmails = DataManager.emails.shuffled()
-    let randomNumbers = DataManager.numbers.shuffled()
+    let randomNames = dataManager.names.shuffled()
+    let randomSurnames = dataManager.surnames.shuffled()
+    let randomEmails = dataManager.emails.shuffled()
+    let randomNumbers = dataManager.numbers.shuffled()
     
     for list in 0...randomNames.count - 1 {
       personList.append(Person(name: randomNames[list],
