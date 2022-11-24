@@ -9,7 +9,6 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
   
-    var person = Person.getPerson()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,8 +16,10 @@ class TabBarViewController: UITabBarController {
     }
     
 
-  func sendData() {
+  private func sendData() {
       guard let viewControllers = viewControllers else { return }
+    
+      let person = Person.getPersonList()
 
       for viewController in viewControllers {
         if let contactVC = viewController as? ContactListViewController {

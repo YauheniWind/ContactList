@@ -50,23 +50,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="r6p-LL-AZJ">
-                                <rect key="frame" x="16" y="96" width="82" height="171.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="r6p-LL-AZJ">
+                                <rect key="frame" x="16" y="116" width="41.5" height="56"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb8-A8-Sg2">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="38.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydp-mX-LXz">
-                                        <rect key="frame" x="0.0" y="84.5" width="41.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXe-Zc-sdd">
-                                        <rect key="frame" x="0.0" y="151" width="41.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -78,14 +72,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="SwN-Xu-eH0" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r6p-LL-AZJ" secondAttribute="trailing" constant="50" id="8sp-W9-OGD"/>
-                            <constraint firstItem="r6p-LL-AZJ" firstAttribute="top" secondItem="SwN-Xu-eH0" secondAttribute="top" id="XRR-iY-7ut"/>
+                            <constraint firstItem="r6p-LL-AZJ" firstAttribute="top" secondItem="SwN-Xu-eH0" secondAttribute="top" constant="20" id="XRR-iY-7ut"/>
                             <constraint firstItem="r6p-LL-AZJ" firstAttribute="leading" secondItem="SwN-Xu-eH0" secondAttribute="leading" constant="16" id="sRk-US-Up5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="P5k-Qg-vgk"/>
                     <connections>
                         <outlet property="emailLabel" destination="eXe-Zc-sdd" id="ztZ-IZ-b7j"/>
-                        <outlet property="fullNameLabel" destination="cb8-A8-Sg2" id="Ij8-SS-pXj"/>
                         <outlet property="phoneLabel" destination="ydp-mX-LXz" id="bgm-OI-PAH"/>
                     </connections>
                 </viewController>
@@ -149,6 +142,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contact List" id="aP5-rW-eqb"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g2u-ab-ll9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

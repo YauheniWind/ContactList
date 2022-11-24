@@ -9,18 +9,17 @@ import UIKit
 
 class DetailsViewController: UIViewController {
   
-  @IBOutlet weak var fullNameLabel: UILabel!
-  @IBOutlet weak var phoneLabel: UILabel!
-  @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
   
-  var personDetail: Person!
+    var personDetail: Person!
   
-  override func viewDidLoad() {
-        super.viewDidLoad()
-
-    fullNameLabel.text = personDetail.fullName
-    phoneLabel.text = "Phone: \(personDetail.number)"
-    emailLabel.text = "Email: \(personDetail.email)"
+    override func viewDidLoad() {
+          super.viewDidLoad()
+    
+        title = personDetail.fullName
+        phoneLabel.text = "Phone: \(personDetail.number)"
+        emailLabel.text = "Email: \(personDetail.email)"
     }
     
 }

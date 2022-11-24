@@ -34,10 +34,8 @@ class AllInfoTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
           content.text = personList.number
-        case 1:
-          content.text = personList.email
         default:
-          print("Contact")
+          content.text = personList.email
         }
 
 
@@ -46,5 +44,9 @@ class AllInfoTableViewController: UITableViewController {
 
         return cell
     }
+  
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
 
 }
