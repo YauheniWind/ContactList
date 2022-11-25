@@ -7,8 +7,6 @@
 
 import Foundation
 
-let dataManager = DataManager()
-
 struct Person {
   let name: String
   let surname: String
@@ -23,10 +21,10 @@ extension Person {
     
     var personList: [Person] = []
     
-    let randomNames = dataManager.names.shuffled()
-    let randomSurnames = dataManager.surnames.shuffled()
-    let randomEmails = dataManager.emails.shuffled()
-    let randomNumbers = dataManager.numbers.shuffled()
+    let randomNames = DataManager.shered.names.shuffled()
+    let randomSurnames = DataManager.shered.surnames.shuffled()
+    let randomEmails = DataManager.shered.emails.shuffled()
+    let randomNumbers = DataManager.shered.numbers.shuffled()
     
     for list in 0..<randomNames.count {
       personList.append(Person(name: randomNames[list],

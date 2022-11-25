@@ -47,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50BE42C92930E90A0082FAC1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50C5A186292BFE7600E2FE97 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		50C5A166292BFE5500E2FE97 = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +74,12 @@
 		50C5A171292BFE5500E2FE97 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				50C5A196292CDC5400E2FE97 /* ViewControllers */,
+				50C5A198292CDCAC00E2FE97 /* App */,
 				50C5A195292CDC4500E2FE97 /* Model */,
 				50C5A194292CDC3500E2FE97 /* Source */,
 				50C5A197292CDC7700E2FE97 /* Storyboards */,
-				50C5A198292CDCAC00E2FE97 /* App */,
+				50BE42C92930E90A0082FAC1 /* Services */,
+				50C5A196292CDC5400E2FE97 /* ViewControllers */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -79,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				50C5A17B292BFE5700E2FE97 /* Assets.xcassets */,
-				50C5A186292BFE7600E2FE97 /* DataManager.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
